@@ -95,10 +95,32 @@ img {
   max-width:100%;
 }
 
-header {
-  width:270px;
-  float:left;
-  position:fixed;
+header{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+header .left{
+    height: 70px;
+    vertical-align: bottom;
+    float: left;
+}
+
+header .middle{
+    height: 70px;
+    width: 75px;
+    float: right;
+    border-left: 1px solid black;
+
+}
+
+header .right{
+    height: 70px;
+    width: 200px;
+    float: right;
+    border-left: 1px solid black;
+    text-align: right;
+    vertical-align: bottom;
 }
 
 header ul {
@@ -161,8 +183,16 @@ header ul a strong {
 
 section {
   width:500px;
-  float:right;
+  float:left;
   padding-bottom:50px;
+}
+nav{
+    float: right;
+}
+
+footer{
+    border-top: 1px solid black;
+    margin-top: 20px;
 }
 
 small {
@@ -176,12 +206,6 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-}
 
 @media print, screen and (max-width: 960px) {
   
