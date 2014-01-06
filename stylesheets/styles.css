@@ -34,7 +34,7 @@ nav li {
 }
 
 .wrapper {
-    min-width: 650px;
+    width: 650px;
     margin: 0 auto;
 }
 
