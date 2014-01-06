@@ -27,11 +27,11 @@ a {
     text-decoration: none;
 }
 
-section a{
+section a {
     background-color: lightgoldenrodyellow;
 }
 
-section.nolinkbg a{
+section.nolinkbg a {
     background-color: transparent;
 }
 
@@ -116,4 +116,18 @@ li a.active {
 
 .edding4 {
     background-image: url('../assets/edding4.png');
+}
+
+.downloads img {
+    float: left;
+}
+
+.downloads > div div {
+    padding-top: 80px;
+    padding-left: 10px;
+    float: left;
+}
+
+.downloads > div{
+    margin-bottom: 10px;
 }
