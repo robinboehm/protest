@@ -24,8 +24,11 @@ h2 {
 
 a {
     color: black;
-    font-weight: 400;
     text-decoration: none;
+}
+
+section a{
+    background-color: lightgoldenrodyellow;
 }
 
 nav li {
