@@ -67,10 +67,11 @@ header .right {
 }
 
 section {
-    width: 500px;
+    width: 700px;
     float: left;
     padding-bottom: 50px;
     min-height: 800px;
+    font-weight: 800;
 }
 
 nav {
@@ -106,5 +107,14 @@ li a.active {
 
 .edding4 {
     background-image: url('../assets/edding4.png');
+}
+
+section {
+    /*color: gray;*/
+}
+
+section em{
+    color: black;
+    background-color: palegoldenrod;
 }
 
