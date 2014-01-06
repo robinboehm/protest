@@ -11,7 +11,7 @@ p, ul, ol, table, pre, dl {
 h1 {
     font-size: 14px;
     font-weight: lighter;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 h2 {
@@ -71,6 +71,7 @@ section {
     padding-bottom: 50px;
     min-height: 800px;
     font-weight: 800;
+    width: 520px;
 }
 
 nav {
