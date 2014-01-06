@@ -11,7 +11,7 @@ p, ul, ol, table, pre, dl {
 h1 {
     font-size: 14px;
     font-weight: lighter;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 h2 {
@@ -44,13 +44,13 @@ header {
 }
 
 header .left {
-    height: 70px;
+    height: 50px;
     vertical-align: bottom;
     float: left;
 }
 
 header .middle {
-    height: 70px;
+    height: 50px;
     width: 125px;
     float: right;
     border-left: 1px solid black;
@@ -58,7 +58,7 @@ header .middle {
 }
 
 header .right {
-    height: 70px;
+    height: 50px;
     width: 200px;
     float: right;
     border-left: 1px solid black;

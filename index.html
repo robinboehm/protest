@@ -40,16 +40,22 @@
             <li><a class="edding3" href="#Startseite">Links</a></li>
         </ul>
     </nav>
-    <!--
+
     <section id="content">
-        <img src="assets/1.gif" alt=""/>
+        <img id="image"/>
+        <script>
+            (function () {
+                var img = Math.floor(Math.random() * 3) + 1;
+                document.getElementById("image").src = "assets/" + img + ".gif";
+            })();
+        </script>
     </section>
-    -->
 
 
     <!-- Hintergrund -->
     <section>
         <p>Grundgesetz Artikel 3</p>
+
         <p>(1) Alle Menschen sind vor dem Gesetz gleich.</p>
 
         <p>(2) Männer und Frauen sind gleichberechtigt. Der Staat fördert die tatsächliche Durchsetzung der
@@ -58,6 +64,14 @@
         <p>(3) Niemand darf wegen seines Geschlechtes, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat
             und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt
             werden. Niemand darf wegen seiner Behinderung benachteiligt werden.</p>
+        <p>
+            Gesetze sollen schützen. Sie sorgen für einen geregelten Ablauf in unser aller Leben.
+            Manche Gesetze werden nicht immer so ausgeübt, wie sie niedergeschrieben wurden.
+            Manche Menschen fühlen sich diskriminiert.
+            Mache keinen Unterschied!
+            Schaffe Gleichheit! Hilf mit auch andere auf diese Missstände aufmerksam zu
+            machen.
+        </p>
     </section>
 
 
