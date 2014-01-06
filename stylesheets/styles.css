@@ -31,6 +31,10 @@ section a{
     background-color: lightgoldenrodyellow;
 }
 
+section.nolinkbg a{
+    background-color: transparent;
+}
+
 nav li {
     list-style-type: none;
     text-align: right;
@@ -112,21 +116,4 @@ li a.active {
 
 .edding4 {
     background-image: url('../assets/edding4.png');
-}
-
-section {
-    /*color: gray;*/
-}
-
-section em{
-    color: black;
-    background-color: palegoldenrod;
-}
-
-.invisible{
-    display: none;
-}
-
-section{
-    background-repeat: no-repeat;
 }
