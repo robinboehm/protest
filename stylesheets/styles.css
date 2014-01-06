@@ -34,7 +34,7 @@ nav li {
 }
 
 .wrapper {
-    width: 860px;
+    min-width: 650px;
     margin: 0 auto;
 }
 
@@ -67,7 +67,6 @@ header .right {
 }
 
 section {
-    width: 700px;
     float: left;
     padding-bottom: 50px;
     min-height: 800px;
@@ -119,3 +118,10 @@ section em{
     background-color: palegoldenrod;
 }
 
+.invisible{
+    display: none;
+}
+
+section{
+    background-repeat: no-repeat;
+}
