@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Keine Unterschiede von Lisa Hinzmann</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="left">
+        </div>
+        <div class="right">
+        </div>
+        <div class="middle">
+
+        </div>
+        <div style="clear: both;"></div>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a class="edding1 {% if page.path == 'index.html' %}active{% endif %}" href="index.html">keine-Unterschie.de</a>
+            </li>
+            <li><a class="edding2 {% if page.path == 'hintergrund.html' %} active{% endif %}" href="hintergrund.html">Hintergrund</a></li>
+            <li><a class="edding4 {% if page.path == 'downloads.html' %} active{% endif %}" href="downloads.html">Downloads</a></li>
+            <li><a class="edding3 {% if page.path == 'links.html' %} active{% endif %}" href="links.html">Links</a></li>
+            <li><a class="edding4 {% if page.path == 'kontakt.html' %} active{% endif %}" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        {{content}}
+    </section>
+
+    <div style="clear: both;"></div>
+    <footer>
+
+    </footer>
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-46536456-2");
+        pageTracker._trackPageview();
+    } catch (err) {
+    }
+</script>
+
+</body>
+</html>
