@@ -9,10 +9,13 @@ p, ul, ol, table, pre, dl {
     text-align: justify;
 }
 
+ul {
+    padding: 0;
+}
+
 h1 {
     font-size: 14px;
     font-weight: lighter;
-    margin-top: 30px;
 }
 
 h2 {
@@ -128,6 +131,6 @@ li a.active {
     float: left;
 }
 
-.downloads > div{
+.downloads > div {
     margin-bottom: 10px;
 }
