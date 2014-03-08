@@ -133,3 +133,21 @@ li a.active {
 .downloads > div {
     margin-bottom: 10px;
 }
+
+.img-chooser > div,
+.img-chooser > img{
+    float: left;
+}
+
+.img-chooser > div{
+    margin-top: 50%;
+    cursor: pointer;
+}
+
+.img-chooser > img{
+    width: 420px;
+}
+
+.img-chooser:after {
+    clear: both;
+}

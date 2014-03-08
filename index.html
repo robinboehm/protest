@@ -2,11 +2,39 @@
 layout: master
 ---
 
-<img id="image"/>
+<div class="img-chooser">
+    <div id="prev_img" onclick="imageChooser.dec()">
+        <i class="fa fa-arrow-circle-o-left fa-3x"></i>
+    </div>
+    <img id="image"/>
+    <div id="next_img" onclick="imageChooser.inc()">
+        <i class="fa fa-arrow-circle-o-right fa-3x"></i>
+    </div>
+</div>
 <script>
-    (function () {
-        var img = Math.floor(Math.random() * 3) + 1;
-        document.getElementById("image").src = "assets/" + img + ".gif";
+    // Evil global scope ;)
+
+    imageChooser = (function () {
+        // Init random image
+        var numImages = 3;
+        var state = {
+            currentImageID : 1000 + Math.floor(Math.random() * numImages) + 1
+        };
+
+
+        // Define a setter function
+        function setImage(imageID) {
+            document.getElementById("image").src = "assets/" + (imageID % numImages + 1) + ".gif";
+        }
+
+        // Init
+        setImage(state.currentImageID);
+
+        // Export via closure
+        return {
+            inc : function(){ setImage(++state.currentImageID); },
+            dec : function(){ setImage(--state.currentImageID); }
+        };
     })();
 </script>
 
