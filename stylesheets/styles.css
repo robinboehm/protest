@@ -3,6 +3,7 @@ body {
     font: 14px/1.5 Arial;
     font-weight: 300;
     background-color: #fdfdfd;
+    background-image: url('../assets/hintergrund.png');
 }
 
 p, ul, ol, table, pre, dl {
