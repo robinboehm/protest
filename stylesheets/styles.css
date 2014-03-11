@@ -140,13 +140,11 @@ li a.active {
 }
 
 #prev_img{
-    position: absolute;
-    left: 0px;
+    right: 0px;
 }
 
-#prev_img{
-    position: absolute;
-    right: 0px;
+#next_img{
+    left: 0px;
 }
 
 
@@ -154,13 +152,13 @@ li a.active {
 
 
 .img-chooser > div{
+    position: absolute;
     margin-top: 50%;
     cursor: pointer;
 }
 
 .img-chooser > img{
     width: 470px;
-    margin: 0 auto;
     position: absolute;
     left: 15px;
 }
