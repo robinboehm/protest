@@ -16,12 +16,17 @@ layout: master
     $(function () {
         $('#content').mouseenter(function () {
             $('.fadeOver').fadeIn('slow', function () {
-                // Animation complete.
+                $("#image").css({
+                    position: "absolute",
+                    left: "15px"
+                });
             });
         })
                 .mouseleave(function () {
                     $('.fadeOver').fadeOut('slow', function () {
-                        // Animation complete.
+                        $("#image").css({
+                            position: "relative"
+                        });
                     });
                 });
     });

@@ -136,6 +136,7 @@ li a.active {
 
 .img-chooser {
     width: 500px;
+    position: relative;
 }
 
 .img-chooser > div,
