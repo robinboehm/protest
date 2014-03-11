@@ -15,19 +15,22 @@ layout: master
 <script>
     $(function () {
         $('#content').mouseenter(function () {
+            $("#image").css({
+                position: "relative",
+                left: ""
+            });
             $('.fadeOver').fadeIn('slow', function () {
-                $("#image").css({
-                    position: "absolute",
-                    left: "15px"
-                });
+
             });
         })
                 .mouseleave(function () {
+
+                    $("#image").css({
+                        position: "absolute",
+                        left: "15px"
+                    });
                     $('.fadeOver').fadeOut('slow', function () {
-                        $("#image").css({
-                            position: "relative",
-                            left: ""
-                        });
+
                     });
                 });
     });
