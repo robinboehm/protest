@@ -24,13 +24,11 @@ layout: master
             });
         })
                 .mouseleave(function () {
-
-                    $("#image").css({
-                        position: "absolute",
-                        left: "15px"
-                    });
                     $('.fadeOver').fadeOut('slow', function () {
-
+                        $("#image").css({
+                            position: "absolute",
+                            left: "15px"
+                        });
                     });
                 });
     });
