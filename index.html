@@ -3,22 +3,36 @@ layout: master
 ---
 
 <div class="img-chooser">
-    <div id="prev_img" onclick="imageChooser.dec()">
+    <div id="prev_img" onclick="imageChooser.dec()" class="fadeOver">
         <i class="fa fa-angle-left fa-3x"></i>
     </div>
     <img id="image" onclick="imageChooser.inc()"/>
-    <div id="next_img" onclick="imageChooser.inc()">
+
+    <div id="next_img" onclick="imageChooser.inc()" class="fadeOver">
         <i class="fa fa-angle-right fa-3x"></i>
     </div>
 </div>
 <script>
+    $(function () {
+        $('#content').mouseenter(function () {
+            $('.fadeOver').fadeIn('slow', function () {
+                // Animation complete.
+            });
+        })
+                .mouseleave(function () {
+                    $('.fadeOver').fadeOut('slow', function () {
+                        // Animation complete.
+                    });
+                });
+    });
+
     // Evil global scope ;)
 
     imageChooser = (function () {
         // Init random image
         var numImages = 3;
         var state = {
-            currentImageID : 1000 + Math.floor(Math.random() * numImages) + 1
+            currentImageID: 1000 + Math.floor(Math.random() * numImages) + 1
         };
 
 
@@ -32,8 +46,12 @@ layout: master
 
         // Export via closure
         return {
-            inc : function(){ setImage(++state.currentImageID); },
-            dec : function(){ setImage(--state.currentImageID); }
+            inc: function () {
+                setImage(++state.currentImageID);
+            },
+            dec: function () {
+                setImage(--state.currentImageID);
+            }
         };
     })();
 </script>
