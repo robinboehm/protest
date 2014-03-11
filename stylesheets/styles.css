@@ -156,4 +156,5 @@ li a.active {
     background-image: url('../assets/hintergrund.png');
     background-size: 100% 100%;
     min-height: 700px;
+    padding: 25px;
 }
