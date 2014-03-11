@@ -134,6 +134,10 @@ li a.active {
     margin-bottom: 10px;
 }
 
+.img-chooser {
+    width: 500px;
+}
+
 .img-chooser > div,
 .img-chooser > img{
     float: left;
@@ -146,6 +150,7 @@ li a.active {
 
 .img-chooser > img{
     width: 470px;
+    margin: 0 auto;
 }
 
 .img-chooser:after {
