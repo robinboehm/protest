@@ -139,10 +139,19 @@ li a.active {
     position: relative;
 }
 
-.img-chooser > div,
-.img-chooser > img{
-    float: left;
+#prev_img{
+    position: absolute;
+    left: 0px;
 }
+
+#prev_img{
+    position: absolute;
+    right: 0px;
+}
+
+
+
+
 
 .img-chooser > div{
     margin-top: 50%;
@@ -152,6 +161,8 @@ li a.active {
 .img-chooser > img{
     width: 470px;
     margin: 0 auto;
+    position: absolute;
+    left: 15px;
 }
 
 .img-chooser:after {
