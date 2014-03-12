@@ -88,6 +88,22 @@ nav {
     float: right;
 }
 
+@media (max-width: 650px) {
+    section, nav{
+        float: none;
+    }
+    section{
+        width: 90%;
+    }
+    nav {
+        width: 90%;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+}
+
 footer {
     border-top: 1px solid black;
     margin-top: 20px;
