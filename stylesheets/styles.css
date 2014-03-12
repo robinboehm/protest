@@ -89,15 +89,18 @@ nav {
 }
 
 @media (max-width: 650px) {
+    body{
+        padding: 0px;
+    }
     section, nav{
         float: none;
     }
     section{
-        width: 90%;
-        font-size: 75%;
+        width: 100%;
+        font-size: 65%;
     }
     nav {
-        width: 90%;
+        width: 100%;
     }
 
     .wrapper{
